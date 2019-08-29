@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.stream.Stream;
 
 public class MyStructure implements IMyStructure {
     private List<INode> nodes;
@@ -15,6 +16,11 @@ public class MyStructure implements IMyStructure {
 
     @Override
     public int count() {
-        return 0;
+        return (int) nodes.stream().flatMap(INode::nodeSteam).count();
+    }
+
+    public Stream<INode> nodeStream() {
+        return Stream.concat(nodeStream(), nodes.stream().flatMap(INode::nodeSteam)
+        );
     }
 }
