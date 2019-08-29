@@ -16,7 +16,7 @@ public class MyStructureTest {
     private MyStructure filledStructure;
 
     @BeforeClass
-    void setUp() {
+    public void setUp() {
         cmNode1.addNode(node3);
         cmNode1.addNode(node4);
 
@@ -34,7 +34,32 @@ public class MyStructureTest {
 //    }
 
     @Test
-    void shouldBe0WhenEmptySTructure() {
+    public void shouldBe0WhenEmptyStructure() {
         assertEquals(0, emptyStructure.count());
+    }
+
+    @Test
+    public void shouldBeCorrectlyCountWhenNotEmptyStructure() {
+        assertEquals(4, filledStructure.count());
+    }
+
+    @Test
+    public void shouldBeNullWhenStructureIsEmptyUsingFIndByCode() {
+        assertEquals(null, emptyStructure.findByCode("c7"));
+    }
+
+    @Test
+    public void shouldBeNullWhenStructureIsEmptyUsingFIndBYRender() {
+        assertEquals(null, emptyStructure.findByRenderer("c7"));
+    }
+
+    @Test
+    public void shouldBeNullWhenStructureFilledUsingFIndByCode() {
+        assertEquals(null, filledStructure.findByCode("c7"));
+    }
+
+    @Test
+    public void shouldBeNullWhenStructureFilledUsingFIndBYRender() {
+        assertEquals(null, filledStructure.findByRenderer("c7"));
     }
 }

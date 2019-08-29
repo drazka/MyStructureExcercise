@@ -6,13 +6,20 @@ public class MyStructure implements IMyStructure {
 
     @Override
     public INode findByCode(String code) {
-        return null;
+        if (code == null) {
+            throw new IllegalArgumentException("Code = null");
+        }
+        return new Node("code", "render");
     }
 
     @Override
     public INode findByRenderer(String renderer) {
-        return null;
+        if (renderer == null) {
+            throw new IllegalArgumentException("Render = null");
+        }
+        return new Node("code", "render");
     }
+
 
     @Override
     public int count() {
