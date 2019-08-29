@@ -4,5 +4,5 @@ public interface INode {
     String getCode();
     String getRenderer();
 
-    Stream <INode> nodeSteam();
+    Stream <INode> nodeStream();
 }

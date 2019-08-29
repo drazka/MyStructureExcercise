@@ -21,7 +21,7 @@ public class Node implements INode {
     }
 
     @Override
-    public Stream<INode> nodeSteam() {
+    public Stream<INode> nodeStream() {
         return Stream.of(this);
     }
 }

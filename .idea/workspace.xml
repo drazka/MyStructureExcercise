@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df6fbdd-1431-4c44-993a-0c778da50cfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CompsiteNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CompsiteNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/INode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/MyStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MyStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/MyStructureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MyStructureTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,25 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#79#80#0" expanded="true" />
-                <element signature="e#129#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/MyStructure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="690">
+              <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
                 <element signature="e#642#643#0" expanded="true" />
@@ -47,14 +40,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/MyStructureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="720">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1204#1205#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/CompsiteNote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#226#227#0" expanded="true" />
@@ -106,12 +95,12 @@
         <option value="$PROJECT_DIR$/src/main/ICompositeNode.java" />
         <option value="$PROJECT_DIR$/src/main/IMyStructure.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/Node.java" />
         <option value="$PROJECT_DIR$/src/main/INode.java" />
-        <option value="$PROJECT_DIR$/src/main/CompsiteNote.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/MyStructure.java" />
         <option value="$PROJECT_DIR$/src/test/MyStructureTest.java" />
+        <option value="$PROJECT_DIR$/src/main/CompsiteNote.java" />
       </list>
     </option>
   </component>
@@ -170,7 +159,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567105984980" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567108119892" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WAR_JEE_W_07_TDD" />
@@ -195,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyStructureTest.shouldBeCorrectlyCountWhenNotEmptyStructure">
+  <component name="RunManager" selected="JUnit.MyStructureTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="StructureExcercise" />
@@ -224,15 +213,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyStructureTest.shouldBeNullWhenStructureFilledUsingFIndBYRender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StructureExcercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyStructureTest" />
+      <option name="METHOD_NAME" value="shouldBeNullWhenStructureFilledUsingFIndBYRender" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyStructureTest.shouldBeNullWhenStructureIsEmptyUsingFIndByCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StructureExcercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyStructureTest" />
+      <option name="METHOD_NAME" value="shouldBeNullWhenStructureIsEmptyUsingFIndByCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MyStructureTest" />
       <item itemvalue="JUnit.MyStructureTest.shouldBeCorrectlyCountWhenNotEmptyStructure" />
+      <item itemvalue="JUnit.MyStructureTest.shouldBeNullWhenStructureIsEmptyUsingFIndByCode" />
+      <item itemvalue="JUnit.MyStructureTest.shouldBeNullWhenStructureFilledUsingFIndBYRender" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyStructureTest.shouldBeCorrectlyCountWhenNotEmptyStructure" />
         <item itemvalue="JUnit.MyStructureTest" />
+        <item itemvalue="JUnit.MyStructureTest.shouldBeNullWhenStructureFilledUsingFIndBYRender" />
+        <item itemvalue="JUnit.MyStructureTest.shouldBeNullWhenStructureIsEmptyUsingFIndByCode" />
+        <item itemvalue="JUnit.MyStructureTest.shouldBeCorrectlyCountWhenNotEmptyStructure" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -247,7 +260,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566933885909</updated>
-      <workItem from="1566933888894" duration="13725000" />
+      <workItem from="1566933888894" duration="15942000" />
     </task>
     <task id="LOCAL-00001" summary="structure">
       <created>1566936643107</created>
@@ -284,16 +297,17 @@
       <option name="project" value="LOCAL" />
       <updated>1567104321976</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Node corrections">
+      <created>1567106199286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567106199286</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyStructureTest - 2019.08.29 at 20h 38m 55s.xml">
-      <configuration name="MyStructureTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyStructureTest - 2019.08.29 at 20h 39m 43s.xml">
-      <configuration name="MyStructureTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyStructureTest - 2019.08.29 at 20h 43m 59s.xml">
       <configuration name="MyStructureTest" configurationId="JUnit" />
     </history-entry>
@@ -312,9 +326,21 @@
     <history-entry file="MyStructureTest_shouldBeCorrectlyCountWhenNotEmptyStructure - 2019.08.29 at 21h 09m 37s.xml">
       <configuration name="MyStructureTest.shouldBeCorrectlyCountWhenNotEmptyStructure" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyStructureTest_shouldBeNullWhenStructureIsEmptyUsingFIndByCode - 2019.08.29 at 21h 33m 41s.xml">
+      <configuration name="MyStructureTest.shouldBeNullWhenStructureIsEmptyUsingFIndByCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyStructureTest_shouldBeNullWhenStructureFilledUsingFIndBYRender - 2019.08.29 at 21h 34m 02s.xml">
+      <configuration name="MyStructureTest.shouldBeNullWhenStructureFilledUsingFIndBYRender" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyStructureTest - 2019.08.29 at 21h 34m 35s.xml">
+      <configuration name="MyStructureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyStructureTest - 2019.08.29 at 21h 34m 51s.xml">
+      <configuration name="MyStructureTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13725000" />
+    <option name="totallyTimeSpent" value="15942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="988" y="24" width="932" height="1056" extended-state="4" />
@@ -360,7 +386,8 @@
     <MESSAGE value="ComsiteNode class" />
     <MESSAGE value="count method" />
     <MESSAGE value="addNode method" />
-    <option name="LAST_COMMIT_MESSAGE" value="addNode method" />
+    <MESSAGE value="Node corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Node corrections" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/StructureExcercise/Main.class">
@@ -404,43 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#79#80#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#79#80#0" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/INode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ICompositeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StructureExcercise.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -458,10 +448,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#79#80#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/IMyStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ICompositeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/INode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MyStructureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/CompsiteNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
@@ -474,33 +512,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MyStructureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1216#1217#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/IMyStructure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/MyStructure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="690">
+          <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#642#643#0" expanded="true" />

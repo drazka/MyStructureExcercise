@@ -28,10 +28,7 @@ public class MyStructureTest {
         filledStructure.addNode(cmNode1);
     }
 
-//    @Test
-//    public void findByCodeTest() {
-//        MyStructure myStructure = new MyStructure();
-//    }
+    //brakujące testy TODO
 
     @Test
     public void shouldBe0WhenEmptyStructure() {
