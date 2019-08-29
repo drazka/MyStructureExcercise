@@ -23,4 +23,8 @@ public class MyStructure implements IMyStructure {
         return Stream.concat(nodeStream(), nodes.stream().flatMap(INode::nodeSteam)
         );
     }
+
+    public void addNode(Node node) {
+        nodes.add(node);
+    }
 }

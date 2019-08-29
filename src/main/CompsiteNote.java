@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class CompsiteNote extends Node implements ICompositeNode {
 
-    private List<INode> notes = new ArrayList<>();
+    private List<INode> nodes = new ArrayList<>();
 
     public CompsiteNote(String code, String renderer) {
         super(code, renderer);
@@ -12,5 +13,17 @@ public class CompsiteNote extends Node implements ICompositeNode {
     @Override
     public List<INode> getNodes() {
         return null;
+    }
+
+    public void addNode(INode node) {
+        nodes.add(node);
+    }
+
+
+    public Stream<INode> nodeSteam() {
+        return Stream.concat(
+                nodeSteam(),
+                nodes.stream().flatMap(INode::nodeSteam)
+        );
     }
 }
