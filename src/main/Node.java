@@ -1,3 +1,5 @@
+import java.util.stream.Stream;
+
 public class Node implements INode {
 
     private String code;
@@ -16,5 +18,10 @@ public class Node implements INode {
     @Override
     public String getRenderer() {
         return renderer;
+    }
+
+    @Override
+    public Stream<INode> nodeSteam() {
+        return Stream.of(this);
     }
 }
