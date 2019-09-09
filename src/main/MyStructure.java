@@ -6,7 +6,8 @@ import java.util.stream.Stream;
 public class MyStructure implements IMyStructure {
     private List<INode> nodes = new ArrayList<>();
 
-    //metoda napisana przy pomocy szukania w internecie
+
+
     @Override
     public INode findByCode(String code) {
         if (code == null) {
@@ -16,7 +17,7 @@ public class MyStructure implements IMyStructure {
         return findBy(n -> code.equals(n.getCode()));
     }
 
-    //metoda napisana przy pomocy szukania w inernecie
+
     @Override
     public INode findByRenderer(String renderer) {
         if (renderer == null) {
@@ -26,16 +27,25 @@ public class MyStructure implements IMyStructure {
     }
 
 
-    @Override
-    public int count() {
-        return (int) nodes.stream().flatMap(INode::nodeStream).count();
-    }
-
+//    public Stream<INode> nodeStream() {
+//        return Stream.concat(nodeStream(), nodes.stream().flatMap(INode::nodeStream)
+//        );
+//    }
 
     public Stream<INode> nodeStream() {
-        return Stream.concat(nodeStream(), nodes.stream().flatMap(INode::nodeStream)
+        return Stream.concat(Stream.of(this), nodes.stream().flatMap(INode::nodeStream)
         );
     }
+
+    @Override
+    public int count() {
+        return (int) nodes.stream().flatMap(MyStructure::nodeStream).count();
+    }
+
+
+//    public void addNode(INode node) {
+//        nodes.add(node);
+//    }
 
     public void addNode(Node node) {
         nodes.add(node);
