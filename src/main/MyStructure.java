@@ -32,14 +32,14 @@ public class MyStructure implements IMyStructure {
 //        );
 //    }
 
-    public Stream<INode> nodeStream() {
-        return Stream.concat(Stream.of(this), nodes.stream().flatMap(INode::nodeStream)
+    public Stream<Object> flattened() {
+        return Stream.concat(Stream.of(this), nodes.stream().flatMap(INode::flattened)
         );
     }
 
     @Override
     public int count() {
-        return (int) nodes.stream().flatMap(MyStructure::nodeStream).count();
+        return (int) nodes.stream().flatMap((INode t) -> flattened()).count();
     }
 
 
@@ -49,6 +49,9 @@ public class MyStructure implements IMyStructure {
 
     public void addNode(Node node) {
         nodes.add(node);
+    }
+    public void addCNode(CompsiteNode compsiteNode) {
+        nodes.add(compsiteNode);
     }
 
 //    PRZYKLAD ZASTOSOWANIA PREDICATE
@@ -61,7 +64,7 @@ public class MyStructure implements IMyStructure {
 
     private INode findBy(Predicate<INode> predicate) {
         return nodes.stream()
-                .flatMap(INode::nodeStream)
+                .flatMap(INode::flattened)
                 .filter(predicate)
                 .findFirst()
                 .orElse(null);

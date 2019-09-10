@@ -1,3 +1,5 @@
+import java.util.stream.Stream;
+
 public class Node implements INode {
 
     private String code;
@@ -18,8 +20,11 @@ public class Node implements INode {
         return renderer;
     }
 
+    @Override
+    public Stream<INode> flattened() {
+        return Stream.of(this);
+    }
 
-//    public Stream<INode> nodeStream() {
-//        return Stream.of(this);
-//    }
 }
+
+

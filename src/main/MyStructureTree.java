@@ -3,11 +3,9 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import static java.util.Arrays.asList;
-
 public class MyStructureTree implements IMyStructure{
     private int value;
-    private List<INode> nodes = new LinkedList<>();
+    private List<Node> nodes = new LinkedList<>();
 
 //    public MyStructureTree(int value, List<MyStructureTree> nodes) {
 //        super();
@@ -18,7 +16,7 @@ public class MyStructureTree implements IMyStructure{
 //    public MyStructureTree(int value, MyStructureTree... nodes) {
 //        this(value, asList(nodes));
 //    }
-//
+
 //    public int getValue() {
 //        return value;
 //    }
@@ -27,10 +25,16 @@ public class MyStructureTree implements IMyStructure{
 //        return Collections.unmodifiableList(nodes);
 //    }
 
+    public Stream<MyStructureTree> flattened(Node node) {
+        return Stream.concat(
+                Stream.of(this),
+                nodes.stream().flatMap(this::flattened));
+    }
+
     public Stream<MyStructureTree> flattened() {
         return Stream.concat(
                 Stream.of(this),
-                nodes.stream().flatMap(MyStructureTree::flattened));
+                nodes.stream().flatMap(this::flattened));
     }
 
     @Override
@@ -54,7 +58,7 @@ public class MyStructureTree implements IMyStructure{
 
     @Override
     public int count() {
-        return (int) nodes.stream().flatMap(MyStructureTree::flattened)).count();
+        return (int) nodes.stream().flatMap(node -> flattened(node)).count();
     }
 
     private INode findBy(Predicate<INode> predicate) {
