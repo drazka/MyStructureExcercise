@@ -3,11 +3,11 @@ import java.util.List;
 
 //compsite node zawiera wiele nodes/compsite nodes - przykłąd struktury złożonej
 //dlatego stosowane flatMap
-public class CompsiteNode extends Node implements ICompositeNode {
+public class CompositeNode extends Node implements ICompositeNode {
 
     private List<INode> nodes = new ArrayList<>();
 
-    public CompsiteNode(String code, String renderer) {
+    public CompositeNode(String code, String renderer) {
         super(code, renderer);
     }
 

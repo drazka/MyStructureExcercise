@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
+import java.util.stream.Collector;
 
 public class MyStructure implements IMyStructure {
     private List<INode> nodes = new ArrayList<>();
@@ -27,14 +27,11 @@ public class MyStructure implements IMyStructure {
     }
 
 
-//    public Stream<INode> nodeStream() {
-//        return Stream.concat(nodeStream(), nodes.stream().flatMap(INode::nodeStream)
-//        );
-//    }
 
-    public Stream<Object> flattened() {
-        return Stream.concat(Stream.of(this), nodes.stream().flatMap(INode::flattened)
-        );
+    public List<INode> flattenedList() {
+        return nodes.stream()
+                .flatMap(n -> n.stream())
+                .collect(Collector.toList());
     }
 
     @Override
@@ -50,7 +47,7 @@ public class MyStructure implements IMyStructure {
     public void addNode(Node node) {
         nodes.add(node);
     }
-    public void addCNode(CompsiteNode compsiteNode) {
+    public void addCNode(CompositeNode compsiteNode) {
         nodes.add(compsiteNode);
     }
 

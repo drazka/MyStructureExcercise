@@ -1,13 +1,20 @@
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Node implements INode {
+public class Node implements ICompositeNode {
 
     private String code;
     private String renderer;
+    private List<INode> nodes;
 
     public Node(String code, String renderer) {
         this.code = code;
         this.renderer = renderer;
+        this.nodes = new ArrayList<>();
+    }
+
+    public void addNode(INode node) {
+        nodes.add(node);
     }
 
     @Override
@@ -20,11 +27,11 @@ public class Node implements INode {
         return renderer;
     }
 
-    @Override
-    public Stream<INode> flattened() {
-        return Stream.of(this);
-    }
 
+    @Override
+    public List<INode> getNodes() {
+        return nodes;
+    }
 }
 
 
